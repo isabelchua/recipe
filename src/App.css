@@ -66,17 +66,18 @@ ul {
 	text-align: left;
 }
 
-.App-logo {
-	height: 40vmin;
-	pointer-events: none;
-}
-
 h2 {
 	padding-top: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-	.App-logo {
-		animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 900px) {
+	.search-bar {
+		width: 65%;
+	}
+	.search-button {
+		width: 180px;
+	}
+	.App {
+		padding: 0 2%;
 	}
 }

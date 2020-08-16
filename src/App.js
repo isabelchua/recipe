@@ -6,7 +6,6 @@ const App = () => {
 	const APP_ID = '2b72f785';
 	const APP_KEY = '9406171c85db1da963445f972d3ba063';
 
-	console.log(process.env.APPID);
 	const [recipes, setRecipes] = useState([]);
 	const [search, setSearch] = useState('');
 	const [query, setQuery] = useState('beans');
@@ -46,6 +45,7 @@ const App = () => {
 					className='search-bar'
 					type='type'
 					value={search}
+					placeholder='Enter Ingredient (e.g. Chicken, Banana)'
 					onChange={e => updateSearch(e)}
 				/>
 				<button className='search-button' type='submit'>
